@@ -1,7 +1,7 @@
 {
-  "name": "@sgr/core",
+  "name": "@sgr/adapters",
   "version": "0.1.0",
-  "description": "Core schema-guided reasoning primitives.",
+  "description": "LLM provider adapters for Schema-Guided Reasoning.",
   "type": "module",
   "exports": {
     ".": {
@@ -19,6 +19,6 @@
     "format": "bun x ultracite format"
   },
   "dependencies": {
-    "zod": "^4.26.0"
+    "@sgr/core": "workspace:*"
   }
 }
