@@ -1,10 +1,10 @@
 export type SGRPattern = "cascade" | "routing" | "cycle";
 
-export interface SGREventBase {
+export type SGREventBase = {
   stepIndex: number;
   timestamp: number;
   pattern?: SGRPattern;
-}
+};
 
 export type SGREvent =
   | (SGREventBase & {

@@ -1,18 +1,18 @@
-import { z } from "zod";
+import type { z } from "zod";
 
-export interface ToolContext {
+export type ToolContext = {
   metadata?: Record<string, unknown>;
-}
+};
 
-export interface ToolDefinition<
+export type ToolDefinition<
   TInputSchema extends z.ZodTypeAny = z.ZodTypeAny,
-  TOutput = unknown
-> {
+  TOutput = unknown,
+> = {
   name: string;
   description?: string;
   inputSchema: TInputSchema;
   handler: (args: z.infer<TInputSchema>, ctx: ToolContext) => Promise<TOutput>;
-}
+};
 
 export class ToolRegistry {
   private readonly tools = new Map<string, ToolDefinition>();
