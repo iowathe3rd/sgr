@@ -19,6 +19,6 @@
     "format": "bun x ultracite format"
   },
   "dependencies": {
-    "zod": "^4.26.0"
+    "zod": "^4.1.12"
   }
 }
