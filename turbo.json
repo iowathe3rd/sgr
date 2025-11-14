@@ -16,6 +16,12 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "//packages/core:build": {
+      "outputs": ["packages/core/dist/**"]
+    },
+    "//packages/adapters:build": {
+      "outputs": ["packages/adapters/dist/**"]
     }
   }
 }
