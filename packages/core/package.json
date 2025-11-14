@@ -1,0 +1,22 @@
+{
+  "name": "@sgr/core",
+  "version": "0.1.0",
+  "description": "Core schema-guided reasoning primitives.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "bun x ultracite lint",
+    "format": "bun x ultracite format"
+  },
+  "dependencies": {
+    "zod": "^4.26.0"
+  }
+}
