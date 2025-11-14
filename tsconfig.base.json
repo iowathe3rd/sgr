@@ -22,7 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "@sgr/core": ["packages/core/src"],
-      "@sgr/adapters": ["packages/adapters/src"]
+      "@sgr/adapters": ["packages/adapters/src"],
+      "@monorepo/logger": ["packages/logger/src"]
     }
   }
 }
