@@ -7,9 +7,8 @@
 ### 1.1 Установка зависимостей
 - [ ] Добавить `vitest` в `packages/core/package.json` (devDependencies)
 - [ ] Добавить `vitest` в `packages/adapters/package.json` (devDependencies)
-- [ ] Установить `ai` (Vercel AI SDK) для OpenAI adapter
 - [ ] Установить `openai` (официальный SDK)
-- [ ] Установить `@google/generative-ai` для Gemini adapter
+- [ ] Установить `@google/genai` для Gemini adapter
 - [ ] Установить `zod-to-json-schema` для конвертации схем
 - [ ] Запустить `bun install` в корне проекта
 
