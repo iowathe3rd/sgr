@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "sgr-sdk",
   "private": true,
   "scripts": {
     "build": "turbo run build",
