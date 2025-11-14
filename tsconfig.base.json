@@ -24,5 +24,11 @@
       "@sgr/core": ["packages/core/src"],
       "@sgr/adapters": ["packages/adapters/src"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "apps/**/node_modules",
+    "packages/**/node_modules"
+  ]
 }

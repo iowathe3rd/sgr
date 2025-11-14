@@ -1,11 +1,20 @@
+/**
+ * Supported orchestration patterns for an agent run.
+ */
 export type SGRPattern = "cascade" | "routing" | "cycle";
 
+/**
+ * Common data carried by all events emitted by the agent.
+ */
 export type SGREventBase = {
   stepIndex: number;
   timestamp: number;
   pattern?: SGRPattern;
 };
 
+/**
+ * Event union describing agent lifecycle, tool calls, and logs.
+ */
 export type SGREvent =
   | (SGREventBase & {
       kind: "model_step";

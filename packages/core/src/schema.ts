@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+/**
+ * The default schema that routes LLM responses into next-step actions.
+ */
 export const DefaultNextStepSchema = z.discriminatedUnion("type", [
   z.object({
     type: z.literal("clarification"),
@@ -21,4 +24,7 @@ export const DefaultNextStepSchema = z.discriminatedUnion("type", [
   }),
 ]);
 
+/**
+ * Infered TypeScript type for the default next-step schema.
+ */
 export type DefaultNextStep = z.infer<typeof DefaultNextStepSchema>;
