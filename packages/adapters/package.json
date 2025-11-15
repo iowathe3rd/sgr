@@ -19,6 +19,12 @@
     "format": "bun x ultracite format"
   },
   "dependencies": {
-    "@sgr/core": "workspace:*"
+    "@sgr/core": "workspace:*",
+    "@google/generative-ai": "^0.21.0",
+    "openai": "^4.78.1",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.9"
   }
 }
