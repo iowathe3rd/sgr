@@ -5,18 +5,18 @@
 **Цель:** Настроить окружение для разработки и тестирования
 
 ### 1.1 Установка зависимостей
-- [ ] Добавить `vitest` в `packages/core/package.json` (devDependencies)
-- [ ] Добавить `vitest` в `packages/adapters/package.json` (devDependencies)
-- [ ] Установить `openai` (официальный SDK)
-- [ ] Установить `@google/genai` для Gemini adapter
-- [ ] Установить `zod-to-json-schema` для конвертации схем
-- [ ] Запустить `bun install` в корне проекта
+- [x] ~~Добавить `vitest` в `packages/core/package.json` (devDependencies)~~ (2025-11-15 — добавлено в devDependencies)
+- [x] ~~Добавить `vitest` в `packages/adapters/package.json` (devDependencies)~~ (2025-11-15 — добавлено в devDependencies)
+- [x] ~~Установить `openai` (официальный SDK)~~ (2025-11-15 — зависимость добавлена в `packages/adapters`)
+- [x] ~~Установить `@google/genai` для Gemini adapter~~ (2025-11-15 — использован опубликованный пакет `@google/generative-ai`)
+- [x] ~~Установить `zod-to-json-schema` для конвертации схем~~ (2025-11-15 — зависимость добавлена в `packages/adapters`)
+- [ ] Запустить `bun install` в корне проекта *(заблокировано: npm registry возвращает 403 — требуется повторить при доступе)*
 
 ### 1.2 Настройка тестирования
-- [ ] Создать `packages/core/vitest.config.ts`
-- [ ] Создать `packages/adapters/vitest.config.ts`
-- [ ] Добавить задачу `test` в `turbo.json` с конфигурацией outputs
-- [ ] Проверить работу тестов командой `bun x turbo run test`
+- [x] ~~Создать `packages/core/vitest.config.ts`~~ (2025-11-15 — базовая конфигурация на Vitest)
+- [x] ~~Создать `packages/adapters/vitest.config.ts`~~ (2025-11-15 — базовая конфигурация на Vitest)
+- [x] ~~Добавить задачу `test` в `turbo.json` с конфигурацией outputs~~ (2025-11-15 — добавлена общая задача `test` c `coverage/**` outputs)
+- [ ] Проверить работу тестов командой `bun x turbo run test` *(заблокировано той же 403 ошибкой npm registry)*
 
 ---
 
@@ -48,10 +48,10 @@
   - Прерывать loop при достижении лимита
 
 ### 2.2 Документация (JSDoc)
-- [ ] Документировать все типы в `packages/core/src/interfaces.ts`
-- [ ] Документировать `ToolDefinition`, `ToolRegistry` в `packages/core/src/tools.ts`
-- [ ] Документировать `DefaultNextStepSchema` в `packages/core/src/schema.ts`
-- [ ] Документировать `SGREvent` типы в `packages/core/src/events.ts`
+- [x] ~~Документировать все типы в `packages/core/src/interfaces.ts`~~ (ранее реализовано — см. актуальные JSDoc комментарии)
+- [x] ~~Документировать `ToolDefinition`, `ToolRegistry` в `packages/core/src/tools.ts`~~ (ранее реализовано — доступно в коде)
+- [x] ~~Документировать `DefaultNextStepSchema` в `packages/core/src/schema.ts`~~ (ранее реализовано — см. описание схемы)
+- [x] ~~Документировать `SGREvent` типы в `packages/core/src/events.ts`~~ (ранее реализовано)
 - [ ] Документировать `SGRAgent` класс и методы в `packages/core/src/agent.ts`
 
 ### 2.3 Тестирование
